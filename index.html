@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harshitha Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="E:\Portfolio website\bundle.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Harshi's Portfolio</div>
+        <div class="red">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name <span class="purple">Harshitha</span>
+          <div>and I am passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+              <a
+                href="Resume.pdf"
+                download
+                target="_blank"
+                class="btn"
+                ><i class="fa-solid fa-download"></i> Download Resume</a
+              >
+              <a href="https://github.com/SarvariHarshitha" target="_blank"
+                class="btn"><i class="fa-brands fa-github"></i> Visit Github</a
+              >
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="developer.png" width="80%" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <div id="about">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="PP.jpg" width="450px" height="450px">
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>Passionate and driven Computer Science student specializing in Machine Learning, Deep Learning, Computer Networks, Cloud Computing, Web, and Android Development. Proficient in transforming data into insights, network infrastructure design, cloud solutions, and crafting elegant web and Android applications. Committed to continuous learning and collaboration, I'm eager to contribute to innovative projects. I thrive on staying up-to-date with tech trends and excelling in diverse teams.</p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Java</span><br>Strong Problem solving skills in java language</li>
+                  <li><span>Web Developer</span><br>Designing Static and Dynamic websites</li>
+                  <li><span>Data Science</span><br>Specialized in Artificial Intelligence and Machine Learning</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <!-- <li><span>Java</span><br>Strong Problem solving skills in java language</li>
+                  <li><span>Web Developer</span><br>Designing Static and Dynamic websites</li>
+                  <li><span>Data Science</span><br>Specialized in Artificial Intelligence and Machine Learning</li> -->
+                  <p>No experience before in IT field</p>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2021-25</span><br>Vellore Institute of Technology, Amaravati</li>
+                  <li><span>2019-21</span><br>Sree Chaitanya Junior College</li>
+                  <li><span>2018-19</span><br>Ravindra Bharathi School</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <hr />
+      <section class="thirdSection">
+        <h1>Projects</h1>
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+              <!-- PORT 1 -->
+              <div class="portfolio__content grid swiper-slide">
+                  <img src="Alzheimers.jpeg" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">Alzheimers Disease prediction using Deep Learning</h3>
+                      <p class="portfolio__description">
+                        The model is trained to classify Alzheimer's disease using a total of 12 different deep learning architectures.</p>
+                        
+                      <a href="https://github.com/SarvariHarshitha/3d-Alzhemeirs" target="blank" class="button button--flex button--small portfolio__button">
+                          Github
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+              <!-- PORT 2 -->
+              <div class="portfolio__content grid swiper-slide">
+                  <img src="Ss.png" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">SynthScribe</h3>
+                      <p class="portfolio__description">
+                        Led a team of five to develop an Automatic Document Summarization model using NLP, file handling, and
+                        audio/video transcription within 24 hours at Geekathon 1.0, also creating a browser extension for website content
+                        summarization.</p>
+                      <a href="https://github.com/SarvariHarshitha/Geekathon-1.0-Automatic-Document-Summarization-model" target="blank" class="button button--flex button--small portfolio__button">
+                          Github
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+              <!-- PORT 3 -->
+              <div class="portfolio__content grid swiper-slide">
+                  <img src="Vistara.png" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">Vistara Price Prediction Web Application</h3>
+                      <p class="portfolio__description">
+                        Merged 10 regression algorithms into a Flask-driven predictive model, integrated with an interactive web app
+                        featuring PowerBI visualizations and a helpful chatbot for seamless user experience.</p>
+                      <a href="https://github.com/SarvariHarshitha/Airfare-Price-Predition" target="blank" class="button button--flex button--small portfolio__button">
+                           Github
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+
+              <!-- PORT 4 -->
+              <div class="portfolio__content grid swiper-slide">
+                  <img src="Diabetic.png" alt="" class="portfolio__img">
+
+                  <div class="portfolio__data">
+                      <h3 class="portfolio__title">Diabetic Retinopathy </h3>
+                      <p class="portfolio__description">
+                        Collaborated on a SmartInternz Externship project developing an Xception V3 model for diabetic retinopathy
+                        detection and a web app integrating Amazon DynamoDB for user authentication and fundus image analysis.
+                        </p>
+                      <a href="https://github.com/SarvariHarshitha/Diabetic-Retinopathy" target="blank" class="button button--flex button--small portfolio__button">
+                          Github
+                          <i class="uil uil-arrow-right button__icon"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- ARROWS-->
+          <div class="swiper-button-next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+
+          <!-- PAGE -->
+          <div class="swiper-pagination"></div>
+       </div>
+  
+        
+
+      </section>
+      <hr />
+      <section class="fourthSection">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h2 class="section_title">
+                <span>Contact Me</span>
+              </h2>
+              <p><i class="fa-solid fa-paper-plane"></i> harshithakonda21@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i> +91-9063075426</p>
+              <div class="social-icons">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name='submit-to-google-sheet'>
+                <input type="text" name="Name" placeholder="Your Name" required><br>
+                <input type="email" name="Email" placeholder="Your email" required><br>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea><br>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+
+
+          </div>
+          <div class="contact_mail">
+
+          </div>
+          <div class="contact_social">
+
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Harshi's Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-center">
+          Copyright &copy;Sarvari Harshitha Konda | All rights reserved
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "ML engineer",
+          "Web Developer",
+          "App Developer",
+          "Cloud Architect",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var tablinks=document.getElementsByClassName("tab-links");
+      var tabcontents=document.getElementsByClassName("tab-contents");
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+
+
+    </script>
+    <script src="swiper-bundle.min.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxVCL8qyeedYD4pcUhn7xH7Fi3pa_j2N3a89d5BcR0kOzzU1vQSCRxI99Dp7fB-9_9S/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    <script>
+      let swiperPortfolio = new Swiper(".portfolio__container", {
+        cssMode: true,
+        loop: true,
+    
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
